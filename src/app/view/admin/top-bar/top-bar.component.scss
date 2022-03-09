@@ -1,0 +1,28 @@
+.top-bar{
+  height: 45px;
+  margin-right: .5em;
+  border-radius: 15px;
+  background: var(--primary-color-light);
+  padding: 0 0.6em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar .user{
+  display: flex;
+  justify-self: flex-end;
+}
+
+.top-bar .menu-switch{
+  font-size: 1.5em;
+  color: var(--text-color);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 1000;
+  cursor: pointer;
+}

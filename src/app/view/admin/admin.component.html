@@ -1,0 +1,9 @@
+<div id="body" [ngClass]="{'dark': useDarkMode}">
+  <app-nav-bar></app-nav-bar>
+  <main class="home" [ngClass]="{'homeclosed': menuState}">
+    <app-top-bar></app-top-bar>
+    <section class="main">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>

@@ -1,0 +1,95 @@
+<nav class="sidebar" [ngClass]="{'close' : menuState}">
+  <header>
+    <div class="image-text">
+                <span class="image">
+                    <img src="assets/logo.png" alt="" style="border: 2px solid black">
+                </span>
+
+      <div class="text logo-text">
+        <span class="name">MDevelopers</span>
+        <span class="profession">IT developer</span>
+      </div>
+    </div>
+  </header>
+  <div class="menu-bar">
+    <div class="menu">
+      <li class="search-box">
+        <i class="fa-brands fa-searchengin icon"></i>
+        <input type="text" placeholder="Search...">
+      </li>
+
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="#">
+            <i class='fa-solid fa-edit icon'></i>
+            <span class="text nav-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class='fa-solid fa-cog icon'></i>
+            <span class="text nav-text">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-link" routerLink="app-manager/countries" routerLinkActive="active">
+          <a>
+            <i class='fa-solid fa-bar-chart icon'></i>
+            <span class="text nav-text">Revenue</span>
+          </a>
+        </li>
+
+        <li class="nav-link" routerLink="skillManger" routerLinkActive="active">
+          <a>
+            <i class="fa-solid fa-hand-fist icon"></i>
+            <span class="text nav-text">Skills</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">
+            <i class='fa-solid fa-pie-chart icon'></i>
+            <span class="text nav-text">Analytics</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">
+            <i class='fa-solid fa-heart icon'></i>
+            <span class="text nav-text">Likes</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">
+            <i class='fa-solid fa-wallet icon'></i>
+            <span class="text nav-text">Wallets</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="bottom-content">
+      <li class="">
+        <a href="#">
+          <i class='fa-solid fa-log-out icon'></i>
+          <span class="text nav-text">Logout</span>
+        </a>
+      </li>
+
+      <li class="mode" (click)="modeSwitch()">
+        <div class="sun-moon">
+          <i class='fa-solid fa-sun icon sun'></i>
+          <i class='fa-solid fa-moon icon moon'></i>
+        </div>
+        <span class="mode-text text">{{modeName}}</span>
+
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+      </li>
+
+    </div>
+  </div>
+</nav>

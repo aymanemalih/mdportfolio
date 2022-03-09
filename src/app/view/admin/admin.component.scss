@@ -1,0 +1,31 @@
+.home{
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 250px;
+  padding: 5px 0px 0 20px;
+  height: 100vh;
+  width: calc(100% - 250px);
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+.home .text{
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 12px 60px;
+}
+
+.homeclosed{
+  left: 78px!important;
+  height: 100vh;
+  width: calc(100% - 78px)!important;
+}
+
+.main {
+  margin-right: .5em;
+  margin-top: 1em;
+  border-radius: 15px;
+  background: var(--primary-color-light);
+  padding: 0 0.6em;
+}
